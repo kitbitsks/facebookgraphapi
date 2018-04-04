@@ -1,0 +1,130 @@
+<html>
+<head>
+  <title>Facebook Graph Api</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="connecting.css" rel="stylesheet">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="card mb-3">
+          <div id="piccc"></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-2" >
+                  <div id="pic"></div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left: 5px;">
+                      Token
+                    </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Please copy your access token from facebook developer graph api !</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Access Token</label>
+                                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Access token" id="tok2">
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="btn2" data-dismiss="modal">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            </div>
+          </form></div>
+            <div class="col-md-10">
+              <nav class="navbar navbar-light" id="jk">
+                <a class="navbar-brand" href="index.html">About</a>
+                <a class="navbar-brand" href="feed.html">Feed</a>
+                <a class="navbar-brand" href="#">Friends</a>
+                <a class="navbar-brand" href="#">Photos</a>
+                <a class="navbar-brand" href="#">Timeline</a>
+                <a class="navbar-brand" href="#">More</a>
+            </nav>
+            <div class="row">
+              <div class="col-md-12">
+              
+              <div class="card text-center">
+                  <div class="card-header">
+                    <div id="tp"></div>
+                    </div>
+                      <div class="card-body">
+                        <div id="picfeed1"></div>
+                          <p class="card-text"><div id="des"></div><div id="def1"></div> </p><p>Click on Button to go to your facebook Link</p>
+                      </div>
+                      <div class="row" style="margin-left: 20px; margin-bottom: 20px;"><a href="#" class="btn btn-primary" id="fbtn1">FB Link !</a></div>
+                        <div class="card-footer text-muted">
+                    <div id="ct"></div>
+                  </div>
+                </div>
+
+
+          <div class="card text-center">
+                  <div class="card-header">
+                    <div id="tp1"></div>
+                    </div>
+                      <div class="card-body">
+                        <div id="picfeed11"></div>
+                          <p class="card-text"><div id="des1"></div><div id="def2"></div></p><p> Click on Button to go to your facebook Link</p>
+                      </div>
+                        <div class="row" style="margin-left: 20px; margin-bottom: 20px;"><a href="#" class="btn btn-primary" id="fbtn11">FB Link !</a></div>
+                        <div class="card-footer text-muted">
+                    <div id="ct1"></div>
+                  </div>
+                </div>
+
+                <div class="card text-center">
+                  <div class="card-header">
+                    <div id="tp2"></div>
+                    </div>
+                      <div class="card-body">
+                        <div id="picfeed12"></div>
+                          <p class="card-text"><div id="des2"></div><div id="def3"></div></p><p> Click on Button to go to your facebook Link</p>
+                           </div>
+                           <div class="row" style="margin-left: 20px; margin-bottom: 20px;">
+                            <a href="#" class="btn btn-primary" id="fbtn12">FB Link !</a></div>
+                        <div class="card-footer text-muted">
+                    <div id="ct2"></div>
+                  </div>
+                </div>
+
+                <div class="card text-center">
+                  <div class="card-header">
+                    <div id="tp3"></div>
+                    </div>
+                      <div class="card-body">
+                        <div id="picfeed13"></div>
+                          <p class="card-text"><div id="des3"></div> <div id="def4"></div></p><p>Click on Button to go to your facebook Link</p>
+                      </div>
+                      <div class="row" style="margin-left: 20px; margin-bottom: 20px;">
+                            <a href="#" class="btn btn-primary" id="fbtn13">FB Link !</a></div>
+                        <div class="card-footer text-muted">
+                    <div id="ct3"></div>
+                  </div>
+                </div>
+
+
+
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+            </div>
+       </div>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="feeding.js" type="text/javascript"></script>
+</html>
